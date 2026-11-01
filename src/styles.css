@@ -364,6 +364,7 @@ button {
   display: flex;
   width: 248px;
   height: 100vh;
+  overflow-y: auto;
   flex: 0 0 248px;
   flex-direction: column;
   padding: 21px 14px 13px;
@@ -393,6 +394,7 @@ button {
 }
 
 .sidebar-brand-row {
+  flex-shrink: 0;
   min-height: 38px;
   justify-content: space-between;
   padding: 0 5px 0 3px;
@@ -459,6 +461,7 @@ button {
 }
 
 .workspace-switcher {
+  flex-shrink: 0;
   min-height: 60px;
   gap: 10px;
   margin: 28px 0 24px;
@@ -518,6 +521,7 @@ button {
 }
 
 .sidebar-section-label {
+  flex-shrink: 0;
   min-height: 27px;
   padding: 0 10px;
   color: #6f6d7b;
@@ -528,6 +532,7 @@ button {
 
 .sidebar-navigation {
   display: flex;
+  flex: 0 0 auto;
   flex-direction: column;
   gap: 4px;
 }
@@ -622,8 +627,7 @@ button {
 }
 
 .sidebar-bottom {
-  min-height: 0;
-  flex: 1;
+  flex: 1 0 auto;
   flex-direction: column;
   align-items: stretch;
   justify-content: flex-end;
